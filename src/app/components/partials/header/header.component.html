@@ -1,1 +1,29 @@
-<p>header works!</p>
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Fast food</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Juan</a>
+          <ul class="menu">
+            <li>
+              <a routerLink="/profile">Profile</a>
+            </li>
+            <li>
+              <a routerLink="/orders">Orders</a>
+            </li>
+            <li>
+              <a routerLink="/logout">Logout</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a routerLink="/cart-page" class="cart-page">Cart <span>9</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
