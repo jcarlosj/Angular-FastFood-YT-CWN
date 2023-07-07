@@ -27,6 +27,10 @@ export class HomeComponent {
 
         this.foods = this.foodService.getAllBySearchTerm( params[ 'term' ] );
       }
+      // Si encuentra la etiqueta filtra resultados
+      else if( params[ 'tag' ] ) {
+        this.foods = this.foodService.getAllByTag( params[ 'tag' ] );
+      }
       else {
         // Si no muestra todos los resultados
         this.foods = foodService.getAll();
