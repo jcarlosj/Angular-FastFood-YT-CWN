@@ -1,0 +1,18 @@
+ul.tags {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  list-style: none;
+}
+
+a.tag {
+  background: #F1F1F1;
+  color: gray;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  line-height: 2.2;
+}
