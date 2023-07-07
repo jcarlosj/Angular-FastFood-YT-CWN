@@ -1,11 +1,13 @@
 <ul
+  *ngIf="tags"
   class="tags"
 >
-  <li>
+  <li *ngFor="let tag of tags">
     <a
       class="tag"
+      routerLink="/tag/{{ tag.name }}"
     >
-      tag (1)
+      {{ tag.name }} ({{ tag.count }})
     </a>
   </li>
 </ul>
