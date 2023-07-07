@@ -36,10 +36,10 @@ export class SearchComponent {
     });
   }
 
-  // Envia los datos desde el campo de busqueda a la ruta
+  // Envia los datos desde el campo de busqueda a la ruta a traves del sistema de rutas de Angular
   search( term: string ) : void {
     if( term ) {
-      this.router.navigateByUrl( `search/${ term }` );
+      this.router.navigateByUrl( `search/${ term }` );    // Navega a un componente utilizando una ruta de ruta absoluta.
     }
   }
 
