@@ -4,7 +4,8 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'search/:term', component: HomeComponent }
+  { path: 'search/:term', component: HomeComponent },
+  { path: 'tag/:tag', component: HomeComponent }
 ];
 
 @NgModule({
